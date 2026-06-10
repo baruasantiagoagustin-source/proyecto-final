@@ -180,3 +180,12 @@ i {
     border: #3b3b3b solid 1px;
     border-radius: 15%;
 }
+
+.fondo-negro {
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.none {
+    list-style: none;
+}
