@@ -189,3 +189,15 @@ i {
 .none {
     list-style: none;
 }
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid rgb(0, 0, 0);
+    width: 60%;
+    height: 20px;
+    border-radius: 0 3px 3px 0;
+    box-sizing: border-box;
+}
