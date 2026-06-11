@@ -28,6 +28,7 @@
     max-height: 5000px;
     max-width: 5000px;
     margin: 0;
+    z-index: -2;
 }
 
 .navbar {
@@ -88,32 +89,23 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 1rem;
-    margin-top: 2rem; 
+    margin-top: 2rem;
 
-    /* 1. Obligatorio para que la línea se posicione respecto a esta caja */
-    position: relative; 
+    position: relative;
 }
 
-/* 2. Creamos la línea decorativa desfasada */
 .blanco::after {
     content: "";
     position: absolute;
-    
-    /* Grosor y color idénticos a tu outline original */
-    border: 5px solid #9F9BF8; 
-    
-    /* Posicionamiento: */
-    top: -0.5rem;    /* Mantiene la distancia arriba (equivalente a tu outline-offset) */
-    left: -0.5rem;   /* Mantiene la distancia a la izquierda */
-    
-    /* El truco del desfase: */
-    right: -1.5rem;  /* Al usar un número negativo más grande, empujas el borde derecho hacia afuera */
-    bottom: 2rem;    /* Al subir este valor positivo, "cortas" la línea y ocultas la parte de abajo */
-    
-    /* Hace que los clics pasen de largo y actúe solo como decoración */
-    pointer-events: none; 
-    /* Lo envía detrás del texto/contenido del contenedor */
-    z-index: 1; 
+
+    border: 10px solid rgb(117, 114, 255);
+
+    top: -1rem;
+    left: 1.5rem;
+
+    right: -1.5rem;
+    bottom: -1rem;
+    z-index: -1;
 }
 
 
@@ -150,11 +142,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: row;
     gap: 1rem;
-    border: solid #3b3b3b 1px;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
 }
 
@@ -202,7 +194,7 @@ i {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    border: solid #3b3b3b 1px;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
 }
 
@@ -234,7 +226,7 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: #3b3b3b solid 1px;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
     border-radius: 15%;
 }
 
