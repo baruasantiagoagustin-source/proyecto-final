@@ -48,15 +48,16 @@
 
 .logo {
     background-color: white;
-    border-radius: 14px;
-    padding: 10px 20px;
+    border-radius: 0.875rem;
+    padding: 0.625rem 1.25rem;
     margin-top: 0.4rem;
-    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -0.375rem 1.25rem rgba(0, 0, 0, 0.15);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -2rem;
 }
+
 
 .menu {
     background: none;
@@ -176,7 +177,7 @@ i {
 
 .separar {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-direction: column;
 }
 
