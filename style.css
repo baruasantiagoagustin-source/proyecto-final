@@ -63,6 +63,40 @@
     height: 3rem;
 }
 
+.menu-check {
+    visibility: hidden;
+}
+
+.treslineas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+
+.treslineas span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    color: black;
+    background-color: white;
+    width: 30%;
+    border-radius: 5%;
+    list-style: none;
+}
+
 .menu {
     background: none;
     border: none;
