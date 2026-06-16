@@ -347,6 +347,27 @@ h4 {
     gap: 2rem;
 }
 
+input.search {
+    height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: flex-end;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-top: solid white 0.15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 @media (min-width: 760px){
     .content-inicial{
             display: flex;
@@ -426,6 +447,20 @@ h4 {
     padding-bottom: auto;
     height: 40%;
     width: 150px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 8rem
+    }
+
+    .texto-blanco {
+        padding-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        justify-content: space-between;
     }
 }
 
