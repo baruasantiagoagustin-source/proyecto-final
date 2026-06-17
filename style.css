@@ -412,6 +412,7 @@ input.search {
 
 .borde-fin {
     border-bottom: solid black 2px;
+    border-spacing: 1rem;
 }
 
 @media (min-width: 768px){
