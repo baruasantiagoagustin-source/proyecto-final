@@ -405,6 +405,10 @@ input.search {
     padding-bottom: 1rem;
 }
 
+.borde-fin {
+    border-bottom: solid black 2px;
+}
+
 @media (min-width: 760px){
     .content-inicial{
             display: flex;
