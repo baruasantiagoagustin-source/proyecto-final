@@ -409,7 +409,7 @@ input.search {
     border-bottom: solid black 2px;
 }
 
-@media (min-width: 760px){
+@media (min-width: 768px){
     .content-inicial{
             display: flex;
             flex-direction: row;
@@ -505,7 +505,7 @@ input.search {
     }
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 992px) {
         .movimiento {
         display: flex;
         justify-content: center;
