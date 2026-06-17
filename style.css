@@ -63,38 +63,41 @@
     height: 3rem;
 }
 
-.menu-check {
-    visibility: hidden;
-}
-
 .treslineas {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
     gap: 0.2rem;
-    cursor: pointer;
 }
 
 .treslineas span {
     width: 25px;
     height: 3px;
     background-color: black;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .mobile-menu {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 25px;
+    left: 0;
     padding: 20px;
     gap: 15px;
     color: black;
     background-color: white;
-    width: 30%;
-    border-radius: 5%;
+    width: 200px;
+    border-radius: 5px;
     list-style: none;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    z-index: 99;
+}
+
+.menu-toggle:checked ~ .mobile-menu {
+    display: flex;
 }
 
 .menu {
