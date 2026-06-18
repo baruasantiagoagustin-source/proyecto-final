@@ -292,7 +292,7 @@ i {
 
 .texto-blanco {
     color: white;
-    padding-top: 6rem;
+    padding-top: 10rem;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2rem;
@@ -410,10 +410,68 @@ input.search {
     padding-bottom: 1rem;
 }
 
-.borde-fin {
-    border-bottom: solid black 2px;
-    border-spacing: 1rem;
+.linea-divisoria {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100px;        
+    margin-top: 1rem;
+    margin-bottom: 1rem;          
 }
+
+.contenedor-contenido-final {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconos-redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.iconos-redes li {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; 
+    border-right: 2px solid black; 
+}
+
+.iconos-redes li:last-child {
+    border-right: none;
+    padding-right: 0; 
+}
+
+.iconos-redes li:first-child {
+    padding-left: 0;
+}
+
+.iconos-redes-fin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+}
+
+.iconos-redes-fin li {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; 
+    border-right: 2px solid rgb(255, 255, 255); 
+}
+
+.iconos-redes-fin li:last-child {
+    border-right: none;
+    padding-right: 0; 
+}
+
+.iconos-redes-fin li:first-child {
+    padding-left: 0;
+}
+
 
 @media (min-width: 768px){
     .content-inicial{
@@ -499,7 +557,13 @@ input.search {
     .row {
         display: flex;
         flex-direction: row;
-        gap: 8rem
+        justify-content: space-evenly; 
+        gap: 10rem;
+    }
+
+    .row > div {
+        flex: 1;                      
+        min-width: 0;               
     }
 
     .texto-blanco {
@@ -509,6 +573,31 @@ input.search {
         width: 90%;
         justify-content: space-between;
     }
+
+    .text-end {
+    flex-direction: row;
+    }
+
+    .contenedor-contenido-final {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .size-textend {
+        font-size: 0.8rem;
+    }
+
+    .linea-divisoria {
+        border-bottom: none;    
+        border-left: 2px solid black;
+        width: 0;               
+        height: 40px;         
+        margin-top: 0;             
+        margin-bottom: 0;          
+        margin-left: 1rem;        
+        margin-right: 1rem;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -539,4 +628,9 @@ input.search {
         margin-right: auto;
         width: 80%;
     }    
+
+    .text-end {
+        width: 50%;
+
+    }
 }
