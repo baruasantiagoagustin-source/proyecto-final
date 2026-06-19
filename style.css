@@ -503,6 +503,28 @@ input.search {
     padding-left: 0;
 }
 
+.news-letter-div {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;   
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.news-letter-div button {
+    background-color: blueviolet;
+    color: #f0f0f0;
+    border: #f0f0f0 solid 2px;
+    border-radius: 0.5rem;
+}
+
+.news-letter-div input {
+    background-color: #f0f0f0;
+    border: none 2px;
+    border-radius: 0.5rem;
+}
 
 @media (min-width: 768px) {
     .content-inicial {
